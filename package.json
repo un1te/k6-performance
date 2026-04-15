@@ -1,0 +1,19 @@
+{
+  "name": "k6-performance-tests",
+  "version": "1.0.0",
+  "description": "Production-ready k6 performance testing portfolio with smoke, load, and stress tests",
+  "author": "QA Engineer",
+  "license": "MIT",
+  "scripts": {
+    "smoke": "k6 run scripts/smoke.js",
+    "load": "k6 run scripts/load.js",
+    "stress": "k6 run scripts/stress.js"
+  },
+  "keywords": [
+    "k6",
+    "performance-testing",
+    "load-testing",
+    "stress-testing",
+    "grafana"
+  ]
+}
