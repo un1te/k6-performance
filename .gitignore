@@ -1,11 +1,7 @@
-# Reports (generated)
-reports/*.html
-reports/*.json
-
 # OS
 .DS_Store
 .vscode/
-.idea/
+
 
 # Node
 node_modules/
