@@ -1,8 +1,3 @@
-/**
- * Shared utility functions for k6 test scripts
- * Centralizes common logic: reporting, summaries, text formatting
- */
-
 import { htmlReport } from 'https://raw.githubusercontent.com/benc-uk/k6-reporter/main/dist/bundle.js';
 
 /**

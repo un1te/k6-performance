@@ -1,7 +1,6 @@
 /**
  * Stress Test: Find system breaking point
  * Ramps up to 300+ VUs to identify performance degradation
- * Stages: 0→100 (2m) → 200 (5m) → 300 (2m) → 0 (1m)
  * Thresholds relaxed to allow system to fail gracefully
  */
 
@@ -13,13 +12,13 @@ import { ENDPOINTS, POST_PAYLOAD, DEFAULT_HEADERS } from '../config.js';
 export const options = {
   stages: [
     { duration: '30s', target: 100 },  // Ramp up to 100 VUs
-    { duration: '1m', target: 200 },  // Increase to 200 VUs (sustain heavy load)
-    { duration: '30s', target: 300 },  // Push to 300 VUs (breaking point test)
+    { duration: '1m', target: 200 },  // Increase to 200 VUs 
+    { duration: '30s', target: 300 },  // Push to 300 VUs 
     { duration: '30s', target: 0 },    // Ramp down
   ],
   thresholds: {
-    'http_req_duration': ['p(95)<2000'], // Relaxed: allow slower responses under stress
-    'http_req_failed': ['rate<0.05'],    // Relaxed: allow up to 5% failures under extreme load
+    'http_req_duration': ['p(95)<2000'], //  allow slower responses under stress
+    'http_req_failed': ['rate<0.05'],    //  allow up to 5% failures under extreme load
   },
 };
 

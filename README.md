@@ -4,7 +4,7 @@ A production-ready performance testing suite built with [k6](https://k6.io/) (Gr
 
 ---
 
-## 🎯 Project Overview
+##  Project Overview
 
 This repository demonstrates  performance testing practices using k6 against a public REST API (`jsonplaceholder.typicode.com`). The suite includes three distinct test types, each designed to reveal different aspects of system behavior under varying load conditions.
 
@@ -20,7 +20,7 @@ This repository demonstrates  performance testing practices using k6 against a p
 
 ---
 
-## 🎪 Objectives
+##  Objectives
 
 1. **Verify Endpoint Health**: Confirm APIs respond to both GET and POST requests with correct status codes
 2. **Test Under Expected Load**: Simulate typical production traffic patterns and measure response times
@@ -30,7 +30,7 @@ This repository demonstrates  performance testing practices using k6 against a p
 
 ---
 
-## 🚀 Installation
+##  Installation
 
 ### 1. Install k6
 Follow the official installation guide for your operating system: https://k6.io/docs/getting-started/installation
@@ -57,7 +57,7 @@ npm install
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 k6/
@@ -89,7 +89,7 @@ k6/
 
 ---
 
-## 🏃 Running Tests
+##  Running Tests
 
 ### Option 1: Using npm Scripts (Recommended)
 
@@ -131,7 +131,7 @@ After each test completes, you'll see:
 
 ---
 
-## 📊 Performance Metrics Explained
+##  Performance Metrics Explained
 
 ### Core Metrics
 
@@ -158,10 +158,7 @@ k6 breaks down request duration into phases:
 
 ---
 
----
-
-
-## 🔍 Debugging & Troubleshooting
+## Debugging & Troubleshooting
 
 ### Test Fails with Status Error
 Check the target endpoint:
@@ -180,5 +177,3 @@ chmod 755 reports/
 Senior QA Engineer Rashchupkin Kostiantin
 
 ---
-
-**Happy Load Testing! 🚀**
