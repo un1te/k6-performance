@@ -172,8 +172,3 @@ Ensure `reports/` directory exists and is writable:
 ls -la reports/
 chmod 755 reports/
 ```
-## 👤 Author
-
-Senior QA Engineer Rashchupkin Kostiantin
-
----
